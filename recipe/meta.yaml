@@ -43,8 +43,8 @@ about:
     software that automates absolute binding free energy
     calculations through either the alchemical or geometric
     route by molecular dynamics simulations.
-  doc_url: https://simplejson.readthedocs.io/
-  dev_url: https://github.com/simplejson/simplejson
+  doc_url: https://github.com/fhh2626/BFEE2
+  dev_url: https://github.com/fhh2626/BFEE2/tree/dev
 
 extra:
   recipe-maintainers:
