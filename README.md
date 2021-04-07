@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bfee2-feedstock
 
 Summary: Binding Free Energy Estimator 2
 
-Development: https://github.com/simplejson/simplejson
+Development: https://github.com/fhh2626/BFEE2/tree/dev
 
-Documentation: https://simplejson.readthedocs.io/
+Documentation: https://github.com/fhh2626/BFEE2
 
 Binding free energy estimator (BFEE) is a python-based
 software that automates absolute binding free energy
