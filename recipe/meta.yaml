@@ -1,13 +1,13 @@
 {% set name = "BFEE2" %}
-{% set version = "2.1.5" %}
+{% set version = "2.1.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/5b/31/54eb155c946213922189baa73a1e720fe42dd5ca1ead4ca1f88dbe269822/BFEE2-2.1.5.tar.gz 
-  sha256: c4b078782f1bb54fe1f344a2ab3aa069bb0bd82747eb247bf5a7e8be2a15a8d4
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: dd3c1275bb9639981b8c17ed446facfae927fed1eb1c5be469da89664f0904be
 
 build:
   noarch: python
