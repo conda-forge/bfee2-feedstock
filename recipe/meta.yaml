@@ -1,5 +1,5 @@
 {% set name = "BFEE2" %}
-{% set version = "2.1.12" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e8a3601aec7353fd0cfe684556ba6d4d8751ad4c227f000ddc8467849c702a73
+  sha256: 5892914885758818e737f426122d4f98dd7993fd424129b61855f39eea94855a
 
 build:
   noarch: python
