@@ -26,6 +26,7 @@ requirements:
     - MDAnalysis
     - matplotlib-base
     - numpy
+    - scipy
     - Pyside2
     - parmed
 
