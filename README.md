@@ -1,11 +1,11 @@
-About bfee2
-===========
+About bfee2-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bfee2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/fhh2626/BFEE2
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bfee2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Binding Free Energy Estimator 2
 
