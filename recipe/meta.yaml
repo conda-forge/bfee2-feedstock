@@ -18,7 +18,7 @@ requirements:
   build:
 
   host:
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - pip
   run:
     - python >={{ python_min }}
