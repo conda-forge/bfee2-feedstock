@@ -1,5 +1,5 @@
 {% set name = "BFEE2" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 3e4a0b525d8dd5fc07d892d3f943dea8ebf49eea9c3f0ba05be91d5090a06f7d
+  sha256: B7241D748CC8AF10B55A6149BF2CFEA47CC39E6E37C5FB4D27160C5A4C47D7E1
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - appdirs
     - MDAnalysis
     - matplotlib-base
-    - numpy
+    - numpy < 2.3
     - scipy
     - Pyside6
     - parmed
