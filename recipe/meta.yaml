@@ -14,7 +14,7 @@ outputs:
     build:
       noarch: python
       number: 1
-      script: {{ PYTHON }} -m pip install . -vv
+      script: python -m pip install . -vv
     requirements:
       host:
         - python {{ python_min }}
@@ -57,7 +57,7 @@ about:
   license_file: LICENSE
   summary: Binding Free Energy Estimator 2
   description: |
-    Binding free energy estimator (BFEE) is a python-based 
+    Binding free energy estimator (BFEE) is a python-based
     software that automates absolute binding free energy
     calculations through either the alchemical or geometric
     route by molecular dynamics simulations.
