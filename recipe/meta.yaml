@@ -9,46 +9,33 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
   sha256: b7241d748cc8af10b55a6149bf2cfea47cc39e6e37c5fb4d27160c5a4c47d7e1
 
-outputs:
-  - name: {{ name|lower }}
-    build:
-      noarch: python
-      number: 1
-      script: python -m pip install . -vv
-    requirements:
-      host:
-        - python {{ python_min }}
-        - pip
-      run:
-        - python >={{ python_min }}
-        - appdirs
-        - MDAnalysis
-        - matplotlib-base
-        - numpy <2.3
-        - scipy
-        - Pyside6
-        - parmed
-        - requests
-    test:
-      requires:
-        - python {{ python_min }}
-      imports:
-        - BFEE2
+build:
+  noarch: python
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
 
-  - name: bfee3
-    build:
-      noarch: python
-      number: 1
-      script: python -c "print('bfee3 is an alias package for bfee2')"
-    requirements:
-      run:
-        - python >={{ python_min }}
-        - {{ pin_subpackage(name|lower, exact=True) }}
-    test:
-      requires:
-        - python {{ python_min }}
-      commands:
-        - python -c "import BFEE2"
+requirements:
+  build:
+
+  host:
+    - python {{ python_min }}
+    - pip
+  run:
+    - python >={{ python_min }}
+    - appdirs
+    - MDAnalysis
+    - matplotlib-base
+    - numpy <2.3
+    - scipy
+    - Pyside6
+    - parmed
+    - requests
+
+test:
+  requires:
+    - python {{ python_min }}
+  imports:
+    - BFEE2
 
 about:
   home: https://github.com/fhh2626/BFEE2
@@ -57,7 +44,7 @@ about:
   license_file: LICENSE
   summary: Binding Free Energy Estimator 2
   description: |
-    Binding free energy estimator (BFEE) is a python-based
+    Binding free energy estimator (BFEE) is a python-based 
     software that automates absolute binding free energy
     calculations through either the alchemical or geometric
     route by molecular dynamics simulations.
