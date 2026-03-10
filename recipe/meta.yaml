@@ -11,6 +11,9 @@ source:
 
 build:
   number: 0
+  noarch: python
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
 
 outputs:
   - name: {{ name|lower }}
@@ -49,6 +52,25 @@ outputs:
         - python {{ python_min }}
       commands:
         - python -c "import BFEE2"
+  host:
+    - python {{ python_min }}
+    - pip
+  run:
+    - python >={{ python_min }}
+    - appdirs
+    - MDAnalysis
+    - matplotlib-base
+    - numpy <2.3
+    - scipy
+    - Pyside6
+    - parmed
+    - requests
+
+test:
+  requires:
+    - python {{ python_min }}
+  imports:
+    - BFEE2
 
 about:
   home: https://github.com/fhh2626/BFEE2
