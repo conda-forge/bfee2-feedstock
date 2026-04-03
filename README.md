@@ -23,11 +23,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12370&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bfee2-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -38,6 +37,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-bfee2-green.svg)](https://anaconda.org/conda-forge/bfee2) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/bfee2.svg)](https://anaconda.org/conda-forge/bfee2) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/bfee2.svg)](https://anaconda.org/conda-forge/bfee2) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/bfee2.svg)](https://anaconda.org/conda-forge/bfee2) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-bfee3-green.svg)](https://anaconda.org/conda-forge/bfee3) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/bfee3.svg)](https://anaconda.org/conda-forge/bfee3) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/bfee3.svg)](https://anaconda.org/conda-forge/bfee3) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/bfee3.svg)](https://anaconda.org/conda-forge/bfee3) |
 
 Installing bfee2
 ================
@@ -49,16 +49,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `bfee2` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `bfee2, bfee3` can be installed with `conda`:
 
 ```
-conda install bfee2
+conda install bfee2 bfee3
 ```
 
 or with `mamba`:
 
 ```
-mamba install bfee2
+mamba install bfee2 bfee3
 ```
 
 It is possible to list all of the versions of `bfee2` available on your platform with `conda`:
