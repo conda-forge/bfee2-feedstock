@@ -1,5 +1,5 @@
 {% set name = "BFEE2" %}
-{% set version = "3.1.1" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +7,16 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: b7241d748cc8af10b55a6149bf2cfea47cc39e6e37c5fb4d27160c5a4c47d7e1
+  sha256: bcc4c95ee3e33bef73edc83b992e9d002d4c00354f5d9447b3e537613b12c5b3
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: {{ name|lower }}
     build:
       noarch: python
-      number: 1
+      number: 0
       script: python -m pip install . -vv
     requirements:
       host:
@@ -42,7 +42,7 @@ outputs:
   - name: bfee3
     build:
       noarch: python
-      number: 1
+      number: 0
       script: python -c "print('bfee3 is an alias package for bfee2')"
     requirements:
       run:
