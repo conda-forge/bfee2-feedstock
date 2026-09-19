@@ -1,5 +1,5 @@
 {% set name = "BFEE2" %}
-{% set version = "3.2.2" %}
+{% set version = "3.2.2.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: b2e0c33263306ab54818ccc2450158b951c321cf4a0e500a71ec88b7a4476034
+  sha256: dbc9d29bd43ff01811c3860e6a3810bc5b2887952f6849d9c48b2977e90ff754
 
 build:
   number: 0
